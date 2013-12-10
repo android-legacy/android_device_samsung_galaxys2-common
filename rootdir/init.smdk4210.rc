@@ -62,7 +62,10 @@ on post-fs-data
 # insmod kernel modules
     insmod /system/lib/modules/j4fs.ko
     insmod /system/lib/modules/Si4709_driver.ko
-    
+# Exfat
+    insmod /system/lib/modules/exfat_core.ko
+    insmod /system/lib/modules/exfat_fs.ko
+   
 # mount param.lfs
     mount j4fs /dev/block/mmcblk0p4 /mnt/.lfs
 
